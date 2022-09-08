@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
 
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
       <!-- Font Awesome Link -->
       <script src="https://kit.fontawesome.com/aa944b82ed.js" crossorigin="anonymous"></script>
    
@@ -20,51 +23,77 @@
     
   <header>
         
-    <nav class="navbar" style="background-color: #000000;">
-      <div>
-        <ul class="navbar">
-          <li class="nav-item">
-              <a href="#"> <img class="logo-image" src="../assets/img/Logo_W.png" alt="logo"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="./zona1.html">Zonas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="./actividades.html">Actividades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="./historia.html">Historia</a>
-          </li>
-        </ul>
-      
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <img src="../assets/img/Logo_W.png" class="navbar-brand logo-image" href="#">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item nav-text">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="./zona1.html">Zonas</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="./actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="./historia.html">Historia</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </nav> 
 
-    <section>
+    <section class="header-zonas">
       <h1>Zonas de Chile</h1>
     </section>
   </header>
 
-      <section class="zonas-display">
-          <img src="" alt="">
-          <article>
-              <h3>Características</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, nemo? Totam voluptatibus pariatur necessitatibus atque repudiandae error doloribus ea. Corporis dignissimos voluptatem perferendis debitis accusamus perspiciatis nemo rem reprehenderit laudantium.</p>
-          </article>
+      <section class="container">
 
-          <article>
-            <h3>Flora y Fauna</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, nemo? Totam voluptatibus pariatur necessitatibus atque repudiandae error doloribus ea. Corporis dignissimos voluptatem perferendis debitis accusamus perspiciatis nemo rem reprehenderit laudantium.</p>
-        </article>
-
-        <article>
-            <h3>Etnia y culturas</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, nemo? Totam voluptatibus pariatur necessitatibus atque repudiandae error doloribus ea. Corporis dignissimos voluptatem perferendis debitis accusamus perspiciatis nemo rem reprehenderit laudantium.</p>
-        </article>
-          
+        <article class="col">
+        
+        <div class="row align-items-start">
+          <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../assets/img/Zonas /Slide_norte1.jpeg" class="d-block w-100" alt="Norte chile">
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/Zonas /slide_norte2.jpeg" class="d-block w-100" alt="Norte de Chilena">
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/Zonas /slide_norte3.jpeg" class="d-block w-100" alt="Norte de Chile">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div>
+              <div class="zona-text">
+              <h1> Zona Norte</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aperiam deserunt praesentium. Saepe quod, deserunt corrupti ipsum nam incidunt ab, iusto veniam eligendi distinctio facilis aperiam culpa rem quas libero!
+              </p>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-dark justify-content-center">Ver Más</button>
+            </div>
+          </div>
+        </div>
+      </article> 
+      
       </section>
 
   <footer class="footer" style="background-color: #000000;">
@@ -94,6 +123,10 @@
   </ul>
 </div>
   </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     
 </body>
 </html>

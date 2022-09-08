@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
 
+
+       <!-- CSS only -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
       <!-- Font Awesome Link -->
       <script src="https://kit.fontawesome.com/aa944b82ed.js" crossorigin="anonymous"></script>
    
@@ -20,28 +24,30 @@
     
   <header>
         
-    <nav class="navbar" style="background-color: #000000;">
-      <div>
-        <ul class="navbar">
-          <li class="nav-item">
-              <a href="#"> <img class="logo-image" src="../assets/img/Logo_W.png" alt="logo"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="./zona1.html">Zonas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="./actividades.html">Actividades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-text" href="./historia.html">Historia</a>
-          </li>
-        </ul>
-      
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <img src="assets/img/Logo_W.png" class="navbar-brand logo-image" href="#">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item nav-text">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="./zona1.html">Zonas</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="./actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="./historia.html">Historia</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </nav> 
 
     <section>
       <h1>Actividad PD</h1>
@@ -80,6 +86,11 @@
   </ul>
 </div>
   </footer>
-    
+
+
+  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+      
 </body>
 </html>

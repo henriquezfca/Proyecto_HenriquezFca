@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
 
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
       <!-- Font Awesome Link -->
       <script src="https://kit.fontawesome.com/aa944b82ed.js" crossorigin="anonymous"></script>
    
@@ -20,30 +23,30 @@
 <div class="grid">
 
       <header>
-        <nav class="navbar" style="background-color: #000000;">
-  
-          <div>
-            <ul class="navbar">
-                <li class="nav-item">
-                    <a href="#"> <img class="logo-image" src="assets/img/Logo_W.png" alt="logo"></a>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+          <div class="container-fluid">
+            <img src="assets/img/Logo_W.png" class="navbar-brand logo-image" href="#">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item nav-text">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-              <li class="nav-item">
-                <a class="nav-text" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-text" href="pages/zona1.html">Zonas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-text" href="pages/actividades.html">Actividades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-text" href="pages/historia.html">Historia</a>
-              </li>
-            
-            </ul>
+                <li class="nav-item nav-text">
+                  <a class="nav-link" href="pages/zona1.html">Zonas</a>
+                </li>
+                <li class="nav-item nav-text">
+                  <a class="nav-link" href="pages/actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item nav-text">
+                  <a class="nav-link" href="pages/historia.html">Historia</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        
-        </nav>
+        </nav> 
         
         <section id="inicio" class="hero-section"> 
         <h1>Viajemos por Chile</h1>
@@ -53,91 +56,114 @@
       </header>
    
 
-    <section class="container">
-      <article>
-        <img src="assets/img/paisaje1.png" alt="Patagonia Chilena" class="article-img">
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/paisaje1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zona Norte</h5>
+                <p class="card-text">La zona norte se caracteriza por su clima seco y desértico en las regiones ubicadas más al norte o septentrionales por la presencia del desierto de Atacama, que cubre la mayor parte de esta región.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/paisaje2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zona centro</h5>
+                <p class="card-text">La zona central está enclavada en una planicie formada por pequeños valles y situada entre la cordillera de los Andes y la cordillera de la Costa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/paisaje3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zona Sur</h5>
+                <p class="card-text">La zona sur austral muestra una característica muy peculiar en su relieve que la diferencia del resto de Chile, y es la desaparición por completo de la planicie costera así como de la depresión intermedia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      </article>
+        <div class="container container-fluid d-grid gap-2 col-6 mx-auto">
+          <button type="button" class="btn btn-dark btn-lg" href="pages/zona1.html" >Conocer más</button>
+        </div>
+    </section>
 
-      <article id="gradient">
-        <img src="assets/img/paisaje2.jpeg" alt="Araucanía" class="article-img">
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
-        
-      </article>
 
-      <article>
-        <img src="assets/img/paisaje3.jpeg" alt="Antofagasta" class="article-img rounded">
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
-        
-      </article>
-  </section>
 
   <section class="division">
     <h1>Chile, un país para enamorarse </h1>
   </section>
 
-  <!-- Aqui esta aplicado GRIDS-->
-  <section class="container-2">
-    <article class="box1">
+
+  <section class="container container-fluid text-center">
+    <div class="row align-items-center container">
+    <article class="col">
       <img src="assets/img/paisaje1.png" alt="Patagonia Chilena" class="article-img">
       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
 
     </article>
 
-    <article class="box2">
+    <article class="col">
       <img src="assets/img/paisaje2.jpeg" alt="Araucanía" class="article-img" >
       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
       
     </article>
 
-    <article class="box3">
+    <article class="col">
       <img src="assets/img/paisaje3.jpeg" alt="Antofagasta" class="article-img">
       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
-      
     </article>
-
-    <article class="box4">
+    </div>
+    <div class="row align-items-center container container-fluid">
+    <article class="col">
       <img src="assets/img/paisaje1.png" alt="Patagonia Chilena" class="article-img">
       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
 
     </article>
 
-    <article class="box5">
+    <article class="col">
       <img src="assets/img/paisaje2.jpeg" alt="Araucanía" class="article-img">
       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, obcaecati. Voluptatem quidem repellendus provident a tenetur molestias nemo, possimus molestiae sequi? Vel saepe dolor ea vero explicabo eligendi veritatis velit.</p>
       
     </article>
+    </div>
   </section>
 
-  <footer class="footer" style="background-color: #000000;">
-
-    <ul>
-
-      <li class="nav-item">
-        <a href="#"> <img id="logo-image" src="assets/img/Logo_W.png" alt="logo"></a>
-    </li>
-  <li class="nav-item">
-    <a class="nav-text" href="index.html">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-text" href="pages/zona1.html">Zonas</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-text" href="pages/actividades.html">Actividades</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-text" href="pages/historia.html">Historia</a>
-  </li>
-      <li>
-        <i class="fa-brands fa-instagram" style="color: white;"></i>
-      </li>
-      <li>
-       <i class="fa-brands fa-facebook" style="color: white;"></i>
-      </li>
-
-    </ul>
+  <footer>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <img src="assets/img/Logo_W.png" class="navbar-brand logo-image" href="#">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item nav-text">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="pages/zona1.html">Zonas</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="pages/actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="pages/historia.html">Historia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
   </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  
+  
 
 </div>    
 </body>
