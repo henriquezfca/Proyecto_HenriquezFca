@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    .container {
+        margin-top: 4rem;
+        margin-bottom: 4rem; 
+    }
+}
+
+header {
+    .logo-image { 
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+    li {
+        border-right: 1px solid white;
+        &:hover {color: red;}
+    }
+   
+    
+    .hero-section {
+        background-image: url(../img/hero-img.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        color: #ffffff;
+        text-shadow: 2px 3px 2px #707070;
+        text-align: center;
+        padding: 300px 50px 300px 50px;
+        height: 50%;
+        font-size: 52px;
+        grid-area: hero-section;
+    }
+}
